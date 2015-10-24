@@ -1,0 +1,90 @@
+highlighted-color = #e84545
+
+clearfix()
+	zoom 1
+	&:before
+	&:after
+		content ""
+		display table
+	&:after
+		clear both
+		
+vertical-align()
+	position relative
+	top 50%
+	transform translateY(-50%)
+
+horizontal-align()
+	position relative
+	top 50%
+	transform translateX(-50%)
+		
+*
+*:before
+*:after
+	box-sizing border-box
+
+body
+	font 16px/1.5 "Open Sans", sans-serif;
+	color rgba(0,0,0, .6)
+
+ul
+	margin 0
+	padding-left 0
+	list-style none
+
+a
+	font-size .9em
+	text-decoration none
+
+h1
+	font-size 3em
+
+h2
+	font-size 2.25em
+	line-height 1.4
+	
+h3
+	font-size 1.5em
+
+h4
+	font-size 1.31em
+
+h1
+h2
+h3
+h4
+h5
+	text-align center
+	
+p
+	font-size 0.875em
+
+img
+	max-width 100%
+	
+.container
+	width 85%;
+	max-width 1440px
+	margin 0 auto
+
+.btn
+	display inline-block
+	margin 2.5em
+	padding 15px 25px
+	border-radius 3px
+	background highlighted-color
+	color white
+
+.big-text
+	margin 1.8em 0 0 0 
+	font-size 3.5em
+	color white
+
+.medium-text
+	font-size 1em
+	font-weight 100
+	text-align center
+	color white
+
+	
