@@ -200,3 +200,36 @@ img {
 .work:hover img {
   transform: scale(1.4);
 }
+/* Team Section */
+#our-team {
+  padding: 75px 0;
+}
+#our-team .member {
+  text-align: center;
+}
+#our-team .member h3 {
+  margin: 0;
+  color: #dc143c;
+}
+#our-team .member .social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+#our-team .member .social-links li {
+  margin: 0 5px;
+}
+#our-team .member .social-links li a {
+  width: 40px;
+  height: 40px;
+  padding-top: 5px;
+  font-size: 2em;
+  border: 1px solid rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.6);
+  transition: 0.7s all ease-in;
+}
+#our-team .member .social-links li a:hover {
+  border: 1px solid #dc143c;
+  background: #dc143c;
+  color: #fff;
+}
