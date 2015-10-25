@@ -25,7 +25,7 @@ h2 {
   margin: 1.5em 0 0 0;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 h4 {
   font-size: 1.31em;
@@ -139,4 +139,22 @@ img {
   line-height: 1.2;
   text-align: center;
   color: #fff;
+}
+/* Features Section */
+#features {
+  padding: 75px 0;
+}
+#features .feature {
+  margin: 0 0 2.2em 0;
+  text-align: center;
+}
+#features .feature .fa {
+  color: #e84545;
+}
+#features .feature h3,
+#features .feature p {
+  margin: 0 0 0.25em;
+}
+#features .feature h3 {
+  margin-top: 0.5em;
 }
