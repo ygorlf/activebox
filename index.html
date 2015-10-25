@@ -16,25 +16,23 @@
 	
 	<!-- Header -->
 	<header id="header">
-		<div class="container">
-			
-			<nav>
-				<ul class="navigation">
-					<li class="logo"><a href="#"><img src="img/logo.png" alt="Active Box Logo"></a></li>
-					<li><a href="#">features</a></li>
-					<li><a href="#">works</a></li>
-					<li><a href="#">our team</a></li>
-					<li><a href="#">testimonials</a></li>
-					<li><a href="#">download</a></li>
-				</ul>
-			</nav>
+		<nav>
+			<h1 class="logo"><a href="#index.html">Active Box</a></h1>
+			<a href="#" class="mobile-nav"><i class="fa fa-align-justify"></i></a>
+			<ul>
+				<li><a href="#">features</a></li>
+				<li><a href="#">works</a></li>
+				<li><a href="#">our team</a></li>
+				<li><a href="#">testimonials</a></li>
+				<li><a href="#">download</a></li>
+			</ul>
+		</nav>
 
-			<h2 class="big-text">Your Favorite One Page <br> Multi Purpuse Template</h2>
+		<h2>Your Favorite One Page Multi Purpuse Template</h2>
 
-			<p class="medium-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi illo aspernatur autem fugiat alias.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi illo aspernatur autem fugiat alias.</p>
 
-			<a href="#" class="btn">find out more</a>
-		</div>
+		<a href="#" class="btn">find out more</a>
 	</header>
 
 
@@ -309,14 +307,11 @@
 		</div>
 	</footer>
 	
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="js/owl.carousel.js"></script>
+	<script src="js/jQuery.js"></script>
 	<script>
-		$(document).ready(function() {
-			$("#owl-testimonials").owlCarousel({
-				navigation: true
-				items: 1
-			});
+		$(".mobile-nav").click(function() {
+			$("#header ul").toggleClass("navigation");
+			$(this).css("z-index", "1");
 		});
 	</script>
 </body>
