@@ -8,8 +8,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/typography.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -242,21 +240,27 @@
 
 	<!-- Testimonials Section -->
 	<section id="testimonials">
-		<div id="owl-testimonials" class="owl-carousel">
-			<div class="item">
-				<img src="img/testimonial-1.jpg" alt="Testimonial">
-				<blockquote>
-					Everything that kills me makes me feel alive...
-				</blockquote>
-				<span class="author">Counting Stars, One Republic</span>
-			</div>
-			<div class="item">
-				<img src="img/testimonial-2.jpg" alt="Testimonial">
-				<blockquote>
-					When you want to succeed as bad as you want to breathe, then you'll be succesful...
-				</blockquote>
-				<span class="author">Eric Thomas</span>
-			</div>
+		<div class="banner">
+			<ul>
+				<li>
+					<img src="img/testimonial-1.jpg" alt="Testimonial">
+					<div class="caption">
+						<blockquote>
+							<p>"Everything that kills me makes me feel alive"</p>
+						</blockquote>
+						<span class="author">Counting Stars, One Republic</span>
+					</div>
+				</li>
+				<li>
+					<img src="img/testimonial-2.jpg" alt="Testimonial">
+					<div class="caption">
+						<blockquote>
+							<p>"When you want to succeed as bad as you want to breathe, then you'll be succesful"</p>
+						</blockquote>
+						<span class="author">Eric Thomas</span>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</section>
 
@@ -308,10 +312,21 @@
 	</footer>
 	
 	<script src="js/jQuery.js"></script>
+	<script src="js/unslider.js"></script>
 	<script>
 		$(".mobile-nav").click(function() {
 			$("#header ul").toggleClass("navigation");
 			$(this).css("z-index", "1");
+		});
+	</script>
+	<script>
+		$(function() {
+			$(".banner").unslider({
+				speed: 800,
+				keys: true,
+				dots: true,
+				fluid: true
+			});
 		});
 	</script>
 </body>
