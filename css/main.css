@@ -47,7 +47,7 @@ img {
   max-width: 100%;
 }
 .container {
-  width: 95%;
+  width: 90%;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -249,4 +249,76 @@ img {
 }
 #testimonials .banner ul li .caption {
   text-align: center;
+}
+#download {
+  padding: 75px 0;
+  text-align: center;
+}
+#download h3 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 100;
+}
+#download span {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #2d3033;
+}
+#download .btn {
+  margin-top: 3.5em;
+}
+/* Footer */
+footer {
+  padding: 45px 0 0 0;
+  text-align: center;
+  background: #3a3e64;
+  color: #fff;
+}
+footer h3 {
+  text-transform: uppercase;
+}
+footer p,
+footer address {
+  color: rgba(255,255,255,0.5);
+}
+footer .location,
+footer .social,
+footer .about {
+  margin-bottom: 3.5em;
+}
+footer .social-links {
+  display: flex;
+  justify-content: center;
+}
+footer .social-links li {
+  margin: 0 5px;
+}
+footer .social-links li .fa {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  padding: 5px;
+  font-size: 2em;
+  color: #fff;
+  transition: 0.7s all ease-out;
+}
+footer .social-links li .fa:hover {
+  border: 2px solid #dc143c;
+  background: #dc143c;
+}
+footer .copyright {
+  width: 100%;
+  margin: 0;
+  background: #313454;
+}
+footer .copyright p {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 1em;
+}
+footer .copyright p span {
+  color: #fff;
+}
+footer .copyright p .fa {
+  color: #dc143c;
 }
