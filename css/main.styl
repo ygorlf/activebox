@@ -1,4 +1,4 @@
-highlighted-color = #e84545
+highlighted-color = #DC143C
 
 clearfix()
 	zoom 1
@@ -49,7 +49,10 @@ h3
 	font-size 1.2em
 
 h4
-	font-size 1.31em
+	font-size 1.5em
+	
+h5
+	font-size 1.2em
 
 h1
 h2
@@ -179,3 +182,44 @@ img
 		
 		h3
 			margin-top .5em
+
+/* Works Section */
+.work
+	position relative
+	margin 0
+	height 350px
+	overflow hidden
+	
+	img
+		min-height 350px
+		transition .7s all ease-in
+	
+	.overlay
+		opacity 0
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		overflow hidden
+		background rgba(220,20,60, .6)
+		transition .7s all ease-in
+
+	.overlay-caption
+		vertical-align()
+		
+		h4
+			font-size 
+		
+		h4
+		h5
+			color white
+			margin 0
+			font-weight 100
+		
+	&:hover .overlay
+		opacity 1
+	
+	&:hover img
+		transform scale(1.4)
+		
