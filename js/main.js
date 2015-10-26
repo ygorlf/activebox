@@ -1,4 +1,7 @@
 $(function() {
+	$("a.mobile-nav").click(function(e) {
+		e.preventDefault();
+	});
 	/* Mobile Navigation */
 	$(".mobile-nav").click(function() {
 		$("#header ul").toggleClass("navigation");
