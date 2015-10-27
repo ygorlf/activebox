@@ -4,8 +4,8 @@ $(function() {
 	});
 	/* Mobile Navigation */
 	$(".mobile-nav").click(function() {
-		$("#header ul").toggleClass("navigation");
-		$(this).css("z-index", "1");
+		$("#header ul").toggleClass("navigation").css("z-index", "1");
+		$(this).css("z-index", "2");
 		$(".mobile-nav i").toggleClass("fa-align-justify").addClass("fa-times");
 	});
 	/* Fixed Navigation */
