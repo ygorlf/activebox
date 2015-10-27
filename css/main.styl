@@ -71,7 +71,7 @@ img
 	max-width 100%
 	
 .container
-	width 90%;
+	width 95%;
 	max-width 1440px
 	margin 0 auto
 
@@ -195,8 +195,7 @@ img
 	.heading
 		position absolute
 		top 50%
-		left 50%
-		transform translate(-50%, -50%)
+		transform translate(0, -50%)
 
 	h2
 		color white
@@ -211,9 +210,17 @@ img
 #features 
 	padding 75px 0
 	
+	@media(min-width: 776px)
+		clearfix()
+	
 	.feature 
 		margin 0 0 2.2em 0
 		text-align center
+		
+		@media(min-width: 776px)
+			width 47.5%
+			margin 0 1.25%
+			float left
 		
 		.fa
 			color highlighted-color
@@ -226,11 +233,19 @@ img
 			margin-top .5em
 
 /* Works Section */
+#works 
+	@media(min-width: 776px)
+		clearfix()
+		
 .work
 	position relative
 	margin 0
 	height 350px
 	overflow hidden
+	
+	@media(min-width: 776px)
+		width 50%
+		float left
 	
 	img
 		min-height 350px
@@ -269,8 +284,16 @@ img
 #our-team
 	padding 75px 0
 	
+	@media(min-width: 776px)
+		clearfix()
+	
 	.member
 		text-align center
+		
+		@media(min-width: 776px)
+			width 47.5%
+			margin 0 1.25%
+			float left
 		
 		h3
 			margin 0

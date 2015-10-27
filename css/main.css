@@ -50,7 +50,7 @@ img {
   max-width: 100%;
 }
 .container {
-  width: 90%;
+  width: 95%;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -182,8 +182,7 @@ img {
 #header .heading {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
 }
 #header h2 {
   color: #fff;
@@ -198,9 +197,29 @@ img {
 #features {
   padding: 75px 0;
 }
+@media (min-width: 776px) {
+  #features {
+    zoom: 1;
+  }
+  #features:before,
+  #features:after {
+    content: "";
+    display: table;
+  }
+  #features:after {
+    clear: both;
+  }
+}
 #features .feature {
   margin: 0 0 2.2em 0;
   text-align: center;
+}
+@media (min-width: 776px) {
+  #features .feature {
+    width: 47.5%;
+    margin: 0 1.25%;
+    float: left;
+  }
 }
 #features .feature .fa {
   color: #dc143c;
@@ -213,11 +232,30 @@ img {
   margin-top: 0.5em;
 }
 /* Works Section */
+@media (min-width: 776px) {
+  #works {
+    zoom: 1;
+  }
+  #works:before,
+  #works:after {
+    content: "";
+    display: table;
+  }
+  #works:after {
+    clear: both;
+  }
+}
 .work {
   position: relative;
   margin: 0;
   height: 350px;
   overflow: hidden;
+}
+@media (min-width: 776px) {
+  .work {
+    width: 50%;
+    float: left;
+  }
 }
 .work img {
   min-height: 350px;
@@ -255,8 +293,28 @@ img {
 #our-team {
   padding: 75px 0;
 }
+@media (min-width: 776px) {
+  #our-team {
+    zoom: 1;
+  }
+  #our-team:before,
+  #our-team:after {
+    content: "";
+    display: table;
+  }
+  #our-team:after {
+    clear: both;
+  }
+}
 #our-team .member {
   text-align: center;
+}
+@media (min-width: 776px) {
+  #our-team .member {
+    width: 47.5%;
+    margin: 0 1.25%;
+    float: left;
+  }
 }
 #our-team .member h3 {
   margin: 0;
