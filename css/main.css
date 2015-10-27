@@ -180,9 +180,16 @@ img {
   color: #dc143c;
 }
 #header .heading {
+  max-width: 500px;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+}
+@media (min-width: 776px) {
+  #header .heading {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 #header h2 {
   color: #fff;
