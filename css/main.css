@@ -15,6 +15,9 @@ ul {
 a {
   font-size: 0.9em;
   text-decoration: none;
+  color: #fff;
+  transition: 0.7s all ease;
+  text-transform: capitalize;
 }
 h1 {
   font-size: 2.75em;
@@ -72,6 +75,7 @@ img {
 }
 /* Header */
 #header {
+  position: relative;
   height: 100vh;
   padding: 0 2.5%;
   text-align: center;
@@ -88,6 +92,11 @@ img {
   background: #292c47;
   border: none;
 }
+@media (min-width: 776px) {
+  #header .nav-fixed {
+    padding: 0 5%;
+  }
+}
 #header nav {
   width: 90%;
   margin: 0 auto;
@@ -98,6 +107,12 @@ img {
   padding: 15px;
   transition: 0.3s all ease-out;
   border-bottom: 1px solid rgba(211,211,211,0.3);
+}
+@media (min-width: 776px) {
+  #header nav {
+    width: 100%;
+    padding: 5px;
+  }
 }
 #header nav .logo {
   width: 189px;
@@ -113,6 +128,11 @@ img {
   color: #fff;
   border-radius: 50%;
 }
+@media (min-width: 776px) {
+  #header nav .mobile-nav {
+    display: none;
+  }
+}
 #header nav .mobile-nav .fa {
   font-size: 1.5em;
   position: relative;
@@ -121,6 +141,20 @@ img {
 }
 #header nav ul {
   display: none;
+}
+@media (min-width: 776px) {
+  #header nav ul {
+    display: flex;
+  }
+  #header nav ul li {
+    margin: 5px;
+  }
+  #header nav ul li a {
+    text-transform: uppercase;
+  }
+  #header nav ul li a:hover {
+    color: #dc143c;
+  }
 }
 #header nav .navigation {
   display: flex;
@@ -144,6 +178,12 @@ img {
 }
 #header nav .navigation li a:hover {
   color: #dc143c;
+}
+#header .heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #header h2 {
   color: #fff;
