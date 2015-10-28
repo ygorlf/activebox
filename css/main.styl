@@ -341,9 +341,20 @@ img
 		ul li
 			float left
 			
-			.caption 
-				text-align center
+			@media(min-width: 776px)
+				display flex
+				align-items center
 
+				img
+					width 50%
+					height 325px
+				
+			
+			.caption 
+				width 50%
+				text-align center
+				
+/* Download */
 #download
 	padding 75px 0
 	text-align center

@@ -364,9 +364,21 @@ img {
 #testimonials .banner ul li {
   float: left;
 }
+@media (min-width: 776px) {
+  #testimonials .banner ul li {
+    display: flex;
+    align-items: center;
+  }
+  #testimonials .banner ul li img {
+    width: 50%;
+    height: 325px;
+  }
+}
 #testimonials .banner ul li .caption {
+  width: 50%;
   text-align: center;
 }
+/* Download */
 #download {
   padding: 75px 0;
   text-align: center;
