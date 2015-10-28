@@ -373,10 +373,10 @@ img {
     width: 50%;
     height: 325px;
   }
-}
-#testimonials .banner ul li .caption {
-  width: 50%;
-  text-align: center;
+  #testimonials .banner ul li .caption {
+    width: 50%;
+    text-align: center;
+  }
 }
 /* Download */
 #download {
