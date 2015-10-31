@@ -133,64 +133,64 @@ img
 			padding 5px
 	
 		
-		.logo
-			width 189px
-			height 25px
-			text-indent -9999px
-			background url("../img/logo.png") no-repeat
+	.logo
+		width 189px
+		height 25px
+		text-indent -9999px
+		background url("../img/logo.png") no-repeat
 		
-		.mobile-nav
-			width 50px
-			height 50px
-			text-align center
-			background highlighted-color
-			color white
-			border-radius 50%
-			
-			@media(min-width: 776px)
-				display none
-			
-			.fa
-				font-size 1.5em
-				vertical-align()
+	.mobile-nav
+		width 50px
+		height 50px
+		text-align center
+		background highlighted-color
+		color white
+		border-radius 50%
 		
-		ul
+		@media(min-width: 776px)
 			display none
-			
-			@media(min-width: 776px)
-				display flex
-				
-				li 
-					margin 5px
-					
-					a
-						text-transform uppercase
-						
-						&:hover
-							color highlighted-color
-				
-		.navigation
+		
+		.fa
+			font-size 1.5em
+			vertical-align()
+		
+	ul
+		display none
+		
+		@media(min-width: 776px)
 			display flex
-			flex-direction column
-			justify-content center
-			text-align center
-			position absolute
-			top 0 
-			left 0
-			width 100%
-			height 100vh
-			background rgba(0,0,0, .9)
 			
 			li 
-				margin 10px
+				margin 5px
+				
+			a
+				text-transform uppercase
+				
+				&:hover
+					color highlighted-color
+				
+	.navigation
+		display flex
+		flex-direction column
+		justify-content center
+		text-align center
+		position absolute
+		top 0 
+		left 0
+		width 100%
+		height 100vh
+		background rgba(0,0,0, .9)
+		
+		li 
+			margin 10px
 
-				a 
-					font-size 1.5em
-					text-transform uppercase
-					color white
-					
-					&:hover
-						color highlighted-color
+		a 
+			font-size 1.5em
+			text-transform uppercase
+			color white
+			
+			&:hover
+				color highlighted-color
 	
 	.heading
 		max-width 500px
@@ -270,14 +270,11 @@ img
 	.overlay-caption
 		vertical-align()
 		
-		h4
-			font-size 
-		
-		h4
-		h5
-			color white
-			margin 0
-			font-weight 100
+	h4
+	h5
+		color white
+		margin 0
+		font-weight 100
 		
 	&:hover .overlay
 		opacity 1
@@ -300,31 +297,31 @@ img
 			margin 0 1.25%
 			float left
 		
-		h3
-			margin 0
-			color highlighted-color
+	h3
+		margin 0
+		color highlighted-color
 		
-		.social-links
-			display flex
-			justify-content center
-			margin-bottom 2em
+	.social-links
+		display flex
+		justify-content center
+		margin-bottom 2em
 			
-			li
-				margin 0 5px
-				
-				a
-					width 40px
-					height 40px
-					padding-top 5px
-					font-size 2em
-					border 1px solid rgba(0,0,0, .2)
-					color rgba(0,0,0, .2)
-					transition .3s all ease-in
-					
-					&:hover
-						border 1px solid highlighted-color
-						background highlighted-color
-						color white
+	li
+		margin 0 5px
+		
+		a
+			width 40px
+			height 40px
+			padding-top 5px
+			font-size 2em
+			border 1px solid rgba(0,0,0, .2)
+			color rgba(0,0,0, .2)
+			transition .3s all ease-in
+			
+			&:hover
+				border 1px solid highlighted-color
+				background highlighted-color
+				color white
 
 /* Tesimonials Section */
 #testimonials
@@ -338,21 +335,20 @@ img
 		position relative
 		overflow hidden
 		
-		ul li
-			float left
-			
-			@media(min-width: 776px)
-				display flex
-				align-items center
+	ul li
+		float left
+		
+		@media(min-width: 776px)
+			display flex
+			align-items center
 
-				img
-					width 50%
-					height 325px
-				
-			
-				.caption 
-					width 50%
-					text-align center
+			img
+				width 50%
+				height 325px
+		
+			.caption 
+				width 50%
+				text-align center
 				
 /* Download */
 #download
@@ -371,6 +367,11 @@ img
 	
 	.btn
 		margin-top 3.5em
+		
+		@media(min-width: 776px)
+			width 150px
+			display block
+			
 
 /* Footer */
 footer 
@@ -378,6 +379,9 @@ footer
 	text-align center
 	background #3A3E64
 	color white
+	
+	@media(min-width: 776px)
+		clearfix()
 	
 	h3
 		text-transform uppercase
@@ -390,6 +394,11 @@ footer
 	.social
 	.about 
 		margin-bottom 3.5em
+		
+		@media(min-width: 776px)
+			width 30%
+			margin 0 1.666%
+			float left
 	
 	.social-links
 		display flex
@@ -398,19 +407,19 @@ footer
 		li
 			margin 0 5px
 			
-			.fa
-				width 40px
-				height 40px
-				border 2px solid white
-				padding 5px
-				font-size 2em
-				color white
-				transition .7s all ease-out
-				
-				&:hover
-					border 2px solid highlighted-color
-					background highlighted-color
-		
+		.fa
+			width 40px
+			height 40px
+			border 2px solid white
+			padding 5px
+			font-size 2em
+			color white
+			transition .7s all ease-out
+			
+			&:hover
+				border 2px solid highlighted-color
+				background highlighted-color
+	
 	.copyright
 		width 100%
 		margin 0
@@ -421,11 +430,11 @@ footer
 			padding 15px 0
 			font-size 1em
 			
-			span
-				color white
-			
-			.fa
-				color highlighted-color	
+		span
+			color white
+		
+		.fa
+			color highlighted-color	
 
 
 		
