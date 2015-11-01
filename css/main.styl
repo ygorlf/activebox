@@ -74,6 +74,9 @@ img
 	width 95%;
 	max-width 1440px
 	margin 0 auto
+	
+	@media(min-width: 1140px)
+		width 90%
 
 .btn
 	display inline-block
@@ -199,6 +202,7 @@ img
 		transform translate(0, -50%)
 		
 		@media(min-width: 776px)
+			min-width 600px
 			left 50%
 			transform translate(-50%, -50%)
 
@@ -227,6 +231,10 @@ img
 			margin 0 1.25%
 			float left
 		
+		@media(min-width: 1140px)
+			width 31.66%
+			margin 0.83%
+		
 		.fa
 			color highlighted-color
 		
@@ -251,6 +259,10 @@ img
 	@media(min-width: 776px)
 		width 50%
 		float left
+	
+	@media(min-width: 1140px)
+		width 25%
+		height 280px
 	
 	img
 		min-height 350px
@@ -296,6 +308,10 @@ img
 			width 47.5%
 			margin 0 1.25%
 			float left
+		
+		@media(min-width: 1140px)
+			width 23.75%
+			margin 0.625%
 		
 	h3
 		margin 0
@@ -381,7 +397,14 @@ footer
 	color white
 	
 	@media(min-width: 776px)
-		clearfix()
+		padding 0
+
+		.container
+			padding 35px 0
+			clearfix()
+			display flex
+			justify-content center
+			align-items baseline
 	
 	h3
 		text-transform uppercase
@@ -398,7 +421,6 @@ footer
 		@media(min-width: 776px)
 			width 30%
 			margin 0 1.666%
-			float left
 	
 	.social-links
 		display flex

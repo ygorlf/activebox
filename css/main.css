@@ -54,6 +54,11 @@ img {
   max-width: 1440px;
   margin: 0 auto;
 }
+@media (min-width: 1140px) {
+  .container {
+    width: 90%;
+  }
+}
 .btn {
   display: inline-block;
   margin: 1.5em auto;
@@ -187,6 +192,7 @@ img {
 }
 @media (min-width: 776px) {
   #header .heading {
+    min-width: 600px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -228,6 +234,12 @@ img {
     float: left;
   }
 }
+@media (min-width: 1140px) {
+  #features .feature {
+    width: 31.66%;
+    margin: 0.83%;
+  }
+}
 #features .feature .fa {
   color: #dc143c;
 }
@@ -262,6 +274,12 @@ img {
   .work {
     width: 50%;
     float: left;
+  }
+}
+@media (min-width: 1140px) {
+  .work {
+    width: 25%;
+    height: 280px;
   }
 }
 .work img {
@@ -321,6 +339,12 @@ img {
     width: 47.5%;
     margin: 0 1.25%;
     float: left;
+  }
+}
+@media (min-width: 1140px) {
+  #our-team .member {
+    width: 23.75%;
+    margin: 0.625%;
   }
 }
 #our-team h3 {
@@ -411,14 +435,21 @@ footer {
 }
 @media (min-width: 776px) {
   footer {
-    zoom: 1;
+    padding: 0;
   }
-  footer:before,
-  footer:after {
+  footer .container {
+    padding: 35px 0;
+    zoom: 1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  footer .container:before,
+  footer .container:after {
     content: "";
     display: table;
   }
-  footer:after {
+  footer .container:after {
     clear: both;
   }
 }
@@ -440,7 +471,6 @@ footer .about {
   footer .about {
     width: 30%;
     margin: 0 1.666%;
-    float: left;
   }
 }
 footer .social-links {
